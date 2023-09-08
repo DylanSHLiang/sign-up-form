@@ -140,10 +140,18 @@ input {
     font-family: 'Red Hat Text';
 }
 
+input:not(:placeholder-shown):not(:focus):invalid {
+    outline: 1px solid #fd1010;
+}
+
 input:focus {
     outline: 1px solid #109efd;
     border: 1px solid rgba(66, 66, 66, 0.333);
     box-shadow: 1px 1px 5px 4px rgba(180, 180, 180, 0.333);
+}
+
+input.error {
+    outline: 1px solid #fd1010;
 }
 
 .signup {

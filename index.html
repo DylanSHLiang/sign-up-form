@@ -19,37 +19,37 @@
                 <br>Sign up <em>now</em> to get started.<br><br>Let's Go!
             </h1>
         </div>
-        <form action="" method="post">
+        <form action="" method="post" autocomplete="off">
             <fieldset>
                 <h1>Become a member today!</h1>
                 <div class="fields">
                     <div class="column">
                         <div class="field">
                             <label for="first_name">FIRST NAME</label>
-                            <input type="text" id="first_name">
+                            <input type="text" id="first_name" name="first_name" required placeholder="John">
                         </div>
                         <div class="field">
                             <label for="last_name">LAST NAME</label>
-                            <input type="text" id="last_name">
+                            <input type="text" id="last_name" name="last_name" required placeholder="Wick">
                         </div>
                         <div class="field">
                             <label for="email">EMAIL</label>
-                            <input type="text" id="email">
+                            <input type="email" id="email" name="email" required placeholder="jasonbourne@gmail.com">
                         
                         </div>
                     </div>
                     <div class="column">
                         <div class="field">
                             <label for="phone_number">PHONE NUMBER</label>
-                            <input type="text" id="phone_number">
+                            <input type="text" id="phone_number" name="phone_number" required placeholder="1234567890" pattern="\d{10}">
                         </div>
                         <div class="field">
                             <label for="password">PASSWORD</label>
-                            <input type="text" id="password">
+                            <input type="password" id="password" name="password" required placeholder=" ">
                         </div>
                         <div class="field">
                             <label for="confirm_password">CONFIRM PASSWORD</label>
-                            <input type="text" id="confirm_password">
+                            <input type="password" id="confirm_password" name="confirm_password" required placeholder=" ">
                         </div>
                     </div>
                 </div>
@@ -60,5 +60,6 @@
             </div>
         </form>
     </div>
+    <script src="./scripts.js"></script>
 </body>
 </html>
